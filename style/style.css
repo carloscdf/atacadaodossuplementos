@@ -197,6 +197,10 @@ body {
 
 @media(max-width: 800px) {
 
+    #bannerimg {
+        height: 200px;
+    }
+
     .emphacont {
         display: flex;
         flex-direction: column;
