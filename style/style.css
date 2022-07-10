@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --texta: #333333;
-    --textb:#00C79D;
-    --textc: #3333331a;
+    --texta: #ffffff;
+    --textb:#0D80F5;
+    --textc: #ffffff1a;
     --textd: #0B31E1;
+    --texte: #000000;
 }
 
 * {
@@ -18,6 +19,7 @@
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif;
     color: var(--texta);
+    background-color: var(--texte);
 }
 
 .container {
@@ -28,7 +30,6 @@ body {
 .mainheader {
     border-bottom: 1px solid var(--textc);
     background-color: #33333309;
-
 }
 
 .headercont {
@@ -62,7 +63,7 @@ body {
 }
 
 #bannerimg {
-    width: 1200px;
+    width: 100%;
     height: 300px;
     border-radius: 10px;
     object-fit: cover;
@@ -85,7 +86,7 @@ body {
     height: 250px;
     object-fit: cover;
     object-position: center;
-    background-color: #33333309;
+    background-color: #ffffff09;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-top-left-radius: 10px;
@@ -112,7 +113,6 @@ body {
     color: var(--textb);
     font-size: 14px;
     margin-left: 10px;
-    background-color: #00c79c17;
 }
 
 #emphatext {
@@ -133,13 +133,13 @@ body {
 
 
 #directlink {
-    color: var(--textd);
+    color: var(--textb);
     text-decoration: none;
     padding: 4px 6px 4px 6px;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 18px;
     cursor: pointer;
-    background-color: #0b32e10e;
+    background-color: #ffffff09;
 }
 
 .pricebox{
@@ -177,4 +177,43 @@ body {
     border-radius: 10px;
     color: var(--textb);
     background-color: #00c79c17;
+}
+
+
+/*responsive*/
+
+@media(max-width: 1300px) {
+    .headercont {
+        width: 95%;
+    }
+
+    .bannercont {
+        width: 95%;
+    }
+    .container  {
+        width: 90%;
+    }
+}
+
+@media(max-width: 800px) {
+
+    .emphacont {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+
+    #emphaimg, .emphaimg {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        object-position: center;
+        background-color: #ffffff09;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+        margin-bottom: 20px;
+    }
+
 }
